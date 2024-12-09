@@ -5,16 +5,9 @@ import { lusitana } from '@/app/ui/fonts';
 import { Suspense } from 'react';
 import CardWrapper from '@/app/ui/dashboard/cards';
  import { RevenueChartSkeleton } from '@/app/ui/skeletons';
- import { LatestInvoicesSkeleton, CardSkeleton } from '@/app/ui/skeletons';
+ import { LatestInvoicesSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
 export default async function Page() {
 
-  
-  const {
-    numberOfInvoices,
-    numberOfCustomers,
-    totalPaidInvoices,
-    totalPendingInvoices,
-  } = await fetchCardData();
  
   return (
     <main>
